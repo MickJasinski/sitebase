@@ -17,7 +17,7 @@ title: Serwis Komputerowy Bedford
 email: me@micky.click
 description: >- # this means to ignore newlines until "baseurl:"
   Serwis komputerowy w Bedford zajmuje się profesjonalnym serwisem oraz naprawą kompóterów i laptopów w Bedford. Istniejemy na rynku od 2009 roku. Oferujemy profesjonalne zaplecze serwisowe i dzięki czemu profesjonalnie i szybko diagnozujemy usterki oraz zajmujemy się ich skuteczną naprawą.
-baseurl: "sitebase" # the subpath of your site, e.g. /blog
+baseurl: "/sitebase" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
