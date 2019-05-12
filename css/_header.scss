@@ -39,7 +39,7 @@
             height: 2px; 
             margin: 0 auto;
             background: $blueT;
-            transition: .2s ease-out;
+            @include def();
           }
           &:hover {
             &:after {

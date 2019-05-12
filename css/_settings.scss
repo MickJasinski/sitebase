@@ -1,0 +1,41 @@
+//////// Color variables
+$white: white;
+$black: black;
+
+$darkGrey: #303030;
+$blueT: #2dacf5; 
+$shadow: rgba(0,0,0,.3);
+$darkG: radial-gradient(#333, #111);
+$blueG: linear-gradient(to bottom right,#2dacf5,#2896d6); 
+
+//////// Mixins
+// __breakpoints 
+$grid-breakpoints: (
+    smob: 350px,
+    sm: 550px,
+    smd: 780px,
+    md: 940px,
+    lg: 1200px,
+    xl: 1420px,
+    xxl:1660px
+);
+
+@mixin bp($breakpoint) {
+    @if map-has-key($grid-breakpoints, $breakpoint) {
+        $val: map-get($grid-breakpoints, $breakpoint);
+
+        @media (max-width: $val) {
+            @content;
+        }
+    }
+    @else {
+        @warn "Unknown #{$breakpoint} in $breakpoints";
+    }
+}
+
+// __default transition
+@mixin def() {
+  transition: .2s ease-out;
+}
+
+
