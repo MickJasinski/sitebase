@@ -1,0 +1,53 @@
+.header-page {
+  width: 100%;
+  height: 60px;
+  background: $darkGrey;
+  border-bottom: 2px solid $white;
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 200px;
+    color: $blueT;
+    font-weight: bold;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    .menu {
+      margin-bottom: 0;
+      li {
+        display: inline-block;
+        list-style: none;
+        text-transform: uppercase;
+        font-size: .8rem;
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding: 5px 16px;
+          &:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px; 
+            margin: 0 auto;
+            background: $blueT;
+            transition: .2s ease-out;
+          }
+          &:hover {
+            &:after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

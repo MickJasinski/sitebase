@@ -1,7 +1,17 @@
 {% include head.html %}
 
-<header>
-  <div class="logo">
+{% if page.layout != 'home' %}
+
+  <header class="header-page">
+
+    <a href="/">
+      <div class="logo">LOGO</div>
+    </a>
+
+    <div class="navbar">
+      {% include menu.html %}
+    </div>
     
-  </div>
-</header>
+  </header>
+
+{% endif %}
